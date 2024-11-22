@@ -40,7 +40,9 @@ function Countries() {
       .then((data) => {
         setCountries(data);
       })
-      .catch(console.error());
+      .catch((error) => {
+        console.error("API fetch error:", error);
+      });
   }, []);
 
   return (
