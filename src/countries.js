@@ -41,7 +41,7 @@ function Countries() {
         setCountries(data);
       })
       .catch((error) => {
-        console.error("API fetch error:", error);
+        console.error("Error fetching data: ", error.message);
       });
   }, []);
 
